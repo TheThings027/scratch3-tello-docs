@@ -1,0 +1,14 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Scratch3 Tello Extension"
+
+[languages]
+[languages.en]
+  languageName = 'English'
+  contentDir = 'content'
+  weight = 1
+
+[languages.ja]
+  languageName = 'Japanese'
+  contentDir = 'content.ja'
+  weight = 2
