@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://scratch3-tello.app/docs/getting-started/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://scratch3-tello.app/ja/docs/getting-started/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scratch3-tello.app/docs/getting-started/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scratch3-tello.app/docs/development/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://scratch3-tello.app/ja/docs/development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scratch3-tello.app/docs/development/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scratch3-tello.app/docs/internationalization/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://scratch3-tello.app/ja/docs/internationalization/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scratch3-tello.app/docs/internationalization/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scratch3-tello.app/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://scratch3-tello.app/ja/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scratch3-tello.app/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scratch3-tello.app/docs/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://scratch3-tello.app/ja/docs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scratch3-tello.app/docs/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scratch3-tello.app/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://scratch3-tello.app/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scratch3-tello.app/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scratch3-tello.app/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://scratch3-tello.app/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scratch3-tello.app/tags/"
+                />
+  </url>
+  
+</urlset>

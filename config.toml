@@ -1,7 +1,14 @@
-baseURL = "http://example.org/"
+baseURL = "https://scratch3-tello.app/"
 languageCode = "en-us"
 title = "Scratch3 Tello Extension"
+publishDir = "docs"
+canonifyurls = true
 theme = "book"
+googleAnalytics = "G-EXK0XT1QLD"
+
+[params]
+  BookRepo = "https://github.com/kebhr/scratch3-tello-docs"
+  BookEditPath = "edit/master"
 
 [languages]
 [languages.en]
