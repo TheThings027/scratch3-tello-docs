@@ -4,7 +4,7 @@ title = "Scratch3 Tello Extension"
 publishDir = "docs"
 canonifyurls = true
 theme = "book"
-googleAnalytics = "G-EXK0XT1QLD"
+googleAnalytics = "UA-188543006-1"
 
 [params]
   BookRepo = "https://github.com/kebhr/scratch3-tello-docs"
