@@ -1,10 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scratch3 Tello Extension</title>
+    <title>導入方法 on Scratch3-Tello</title>
     <link>https://scratch3-tello.app/ja/docs/getting-started/</link>
-    <description>Recent content on Scratch3 Tello Extension</description>
+    <description>Recent content in 導入方法 on Scratch3-Tello</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://scratch3-tello.app/ja/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows の場合</title>
+      <link>https://scratch3-tello.app/ja/docs/getting-started/windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scratch3-tello.app/ja/docs/getting-started/windows/</guid>
+      <description>Windows の場合 #  ダウンロード #  GitHub の Releases から、お使いのマシンのアーキテクチャに合ったファイルをダウンロードします。
+32 bit の場合は win-ia32.zip を、64 bit の場合は win.zip をダウンロードしてください。
+展開 #  ダウンロードした zip ファイルを任意の場所に展開してください。
+実行 #  Telloと接続してから、展開したフォルダに含まれている Scratch Desktop.exe を起動してください。</description>
+    </item>
+    
+    <item>
+      <title>macOS の場合</title>
+      <link>https://scratch3-tello.app/ja/docs/getting-started/macos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scratch3-tello.app/ja/docs/getting-started/macos/</guid>
+      <description>macOS の場合 #  ダウンロード #  GitHub の Releases から、mac.zip をダウンロードします。
+展開 #  ダウンロードした zip ファイルを任意の場所に展開してください。
+実行 #  Telloと接続してから、展開したフォルダに含まれている Scratch Desktop.app を起動してください。</description>
+    </item>
+    
+    <item>
+      <title>Linux の場合</title>
+      <link>https://scratch3-tello.app/ja/docs/getting-started/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scratch3-tello.app/ja/docs/getting-started/linux/</guid>
+      <description>Linux の場合 #  現在のところ、Linux 向けのビルド済みバイナリは提供していません。Linux 上で動作させる場合は、環境構築#パッケージを作成 を読み、ご自身でビルド・パッケージングしてください。
+NOTE: Ubuntu 18.04.1 で正常に動作することを確認しています。</description>
+    </item>
+    
   </channel>
 </rss>

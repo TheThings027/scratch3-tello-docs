@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scratch3 Tello Extension</title>
+    <title>開発 on Scratch3-Tello</title>
     <link>https://scratch3-tello.app/ja/docs/development/</link>
-    <description>Recent content on Scratch3 Tello Extension</description>
+    <description>Recent content in 開発 on Scratch3-Tello</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://scratch3-tello.app/ja/docs/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>環境構築</title>
+      <link>https://scratch3-tello.app/ja/docs/development/build-env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scratch3-tello.app/ja/docs/development/build-env/</guid>
+      <description>環境構築 #  Scratch3-Tello は Scratch に用意された拡張機能の仕組みだけでは動作していません。具体的には、Scratch を構成する scratch-vm, scratch-gui, scratch-desktop に変更を加えています。
+scratch3-tello リポジトリにはそれらの変更を行った差分がファイル単位で格納されています。そのため、このリポジトリをクローンしただけではビルドすることができません。
+作業用フォルダの作成 #  $ mkdir scratch3-tello $ cd scratch3-tello 環境構築用スクリプトをダウンロードする #  $ wget https://raw.githubusercontent.com/kebhr/scratch3-tello/master/build.sh $ chmod +x build.sh 環境構築用スクリプトを実行する #  $ ./build.sh build.sh を実行することで、自動的に scratch-vm, scratch-gui, scratch-desktop がクローンされ、scratch3-tello で管理されている差分のファイルが適用されます。
+Scratch3-Tello の起動 #  $ cd scratch-desktop $ npm run build-gui $ npm start パッケージを作成 #  $ cd scratch-desktop $ npm run dist:dir </description>
+    </item>
+    
+    <item>
+      <title>多言語対応</title>
+      <link>https://scratch3-tello.app/ja/docs/development/i18n/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scratch3-tello.app/ja/docs/development/i18n/</guid>
+      <description>多言語対応 #  ブロック名は scratch-vm/src/extensions/scratch3_tello/index.js に定義されています。このファイルに記述されている message オブジェクトが i18n に使用されます。
+message[&#39;内部ブロックコード&#39;][&#39;言語コード&#39;] が、そのブロックのその言語でのブロック名です。
+翻訳の追加・更新に関して、随時 Pull-Request を受け付けています。
+例 #  離陸する ブロックをドイツ語に翻訳します。現時点では、message[&#39;takeoff&#39;] は次のようになっています。
+const message = { takeoff: { &amp;#39;ja&amp;#39;: &amp;#39;離陸する&amp;#39;, &amp;#39;ja-Hira&amp;#39;: &amp;#39;りりくする&amp;#39;, &amp;#39;en&amp;#39;: &amp;#39;takeoff&amp;#39;, }, ... }; ドイツ語を表す言語コードは de です。message[&#39;takeoff&#39;][&#39;de&#39;] が abfliegen となるように、次のように編集します。
+const message = { takeoff: { &amp;#39;ja&amp;#39;: &amp;#39;離陸する&amp;#39;, &amp;#39;ja-Hira&amp;#39;: &amp;#39;りりくする&amp;#39;, &amp;#39;en&amp;#39;: &amp;#39;takeoff&amp;#39;, &amp;#39;de&amp;#39;: &amp;#39;abfliegen&amp;#39;, }, ... }; </description>
+    </item>
+    
   </channel>
 </rss>

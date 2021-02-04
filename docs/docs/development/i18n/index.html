@@ -5,16 +5,24 @@
   <meta name="generator" content="Hugo 0.80.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Docs" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://scratch3-tello.app/docs/" />
+<meta name="description" content="Internationalization #  Block names are defined in scratch-vm/src/extensions/scratch3_tello/index.js. The message object described in this file will be used by i18n.
+message[&#39;internal block code&#39;][&#39;language code&#39;] is the block name in that language for that block.
+Pull-Requests are always welcome to add or update translation.
+Example #  Translate the takeoff block into German. At the moment, message[&#39;takeoff&#39;] looks like this
+const message = { takeoff: { &#39;ja&#39;: &#39;離陸する&#39;, &#39;ja-Hira&#39;: &#39;りりくする&#39;, &#39;en&#39;: &#39;takeoff&#39;, }, .">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Internationalization" />
+<meta property="og:description" content="Internationalization #  Block names are defined in scratch-vm/src/extensions/scratch3_tello/index.js. The message object described in this file will be used by i18n.
+message[&#39;internal block code&#39;][&#39;language code&#39;] is the block name in that language for that block.
+Pull-Requests are always welcome to add or update translation.
+Example #  Translate the takeoff block into German. At the moment, message[&#39;takeoff&#39;] looks like this
+const message = { takeoff: { &#39;ja&#39;: &#39;離陸する&#39;, &#39;ja-Hira&#39;: &#39;りりくする&#39;, &#39;en&#39;: &#39;takeoff&#39;, }, ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scratch3-tello.app/docs/development/i18n/" />
 
-<title>Docs | Scratch3-Tello</title>
+<title>Internationalization | Scratch3-Tello</title>
 <link rel="manifest" href="https://scratch3-tello.app/manifest.json">
 <link rel="icon" href="https://scratch3-tello.app/favicon.png" type="image/x-icon">
-<link rel="alternate" hreflang="ja" href="https://scratch3-tello.app/ja/docs/" title="Docs">
+<link rel="alternate" hreflang="ja" href="https://scratch3-tello.app/ja/docs/development/i18n/" title="多言語対応">
 
 <link rel="stylesheet" href="https://scratch3-tello.app/book.min.6c7c6446dfdee7c8c933e9bbc6e80ee3ed6c913b2a59519f2092c3c6a9d63e55.css" integrity="sha256-bHxkRt/e58jJM&#43;m7xugO4&#43;1skTsqWVGfIJLDxqnWPlU=">
 <script defer src="https://scratch3-tello.app/en.search.min.3ba1af7d473b4f97fc22dd737c37c308d4b98988de4fa34c6129244ef5ca1dee.js" integrity="sha256-O6GvfUc7T5f8It1zfDfDCNS5iYjeT6NMYSkkTvXKHe4="></script>
@@ -29,7 +37,6 @@ if (!doNotTrack) {
 }
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
-<link rel="alternate" type="application/rss+xml" href="https://scratch3-tello.app/docs/index.xml" title="Scratch3-Tello" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -165,7 +172,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://scratch3-tello.app/docs/development/i18n/" class="">Internationalization</a>
+    <a href="https://scratch3-tello.app/docs/development/i18n/" class=" active">Internationalization</a>
   
 
         </li>
@@ -212,32 +219,51 @@ https://github.com/alex-shpak/hugo-book
     <img src="https://scratch3-tello.app/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Docs</strong>
+  <strong>Internationalization</strong>
 
   <label for="toc-control">
-    
-    <img src="https://scratch3-tello.app/svg/toc.svg" class="book-icon" alt="Table of Contents" />
     
   </label>
 </div>
 
 
   
-  <aside class="hidden clearfix">
-    
-  
-
-
-
-
-  </aside>
-  
  
       </header>
 
       
       
-  <article class="markdown"></article>
+  <article class="markdown"><h1 id="internationalization">
+  Internationalization
+  <a class="anchor" href="#internationalization">#</a>
+</h1>
+<p>Block names are defined in <a href="https://github.com/kebhr/scratch3-tello/blob/master/scratch-vm/src/extensions/scratch3_tello/index.js">scratch-vm/src/extensions/scratch3_tello/index.js</a>. The <code>message</code> object described in this file will be used by i18n.</p>
+<p><code>message['internal block code']['language code']</code> is the block name in that language for that block.</p>
+<p>Pull-Requests are always welcome to add or update translation.</p>
+<h2 id="example">
+  Example
+  <a class="anchor" href="#example">#</a>
+</h2>
+<p>Translate the <code>takeoff</code> block into German. At the moment, <code>message['takeoff']</code> looks like this</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">message</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">takeoff</span><span style="color:#f92672">:</span> {
+        <span style="color:#e6db74">&#39;ja&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;離陸する&#39;</span>,
+        <span style="color:#e6db74">&#39;ja-Hira&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;りりくする&#39;</span>,
+        <span style="color:#e6db74">&#39;en&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;takeoff&#39;</span>,
+    },
+    ...
+};
+</code></pre></div><p>The language code for German is <code>de</code>. Edit the following so that <code>message['takeoff']['de']</code> becomes <code>abfliegen</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">message</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">takeoff</span><span style="color:#f92672">:</span> {
+        <span style="color:#e6db74">&#39;ja&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;離陸する&#39;</span>,
+        <span style="color:#e6db74">&#39;ja-Hira&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;りりくする&#39;</span>,
+        <span style="color:#e6db74">&#39;en&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;takeoff&#39;</span>,
+        <span style="color:#e6db74">&#39;de&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;abfliegen&#39;</span>,
+    },
+    ...
+};
+</code></pre></div></article>
  
       
 
@@ -277,7 +303,7 @@ https://github.com/alex-shpak/hugo-book
     </li>
     
     <li class="">
-      <a href="https://scratch3-tello.app/ja/docs/" class="flex align-center">
+      <a href="https://scratch3-tello.app/ja/docs/development/i18n/" class="flex align-center">
         <img src="https://scratch3-tello.app/svg/translate.svg" class="book-icon" alt="Languages" />
         Japanese
       </a>
@@ -291,6 +317,13 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+  <div>
+    <a class="flex align-center" href="https://github.com/kebhr/scratch3-tello-docs/edit/master/content/docs/development/i18n.md" target="_blank" rel="noopener">
+      <img src="https://scratch3-tello.app/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
 </div>
 
  
@@ -299,22 +332,15 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-
-
-
- 
-      </div>
-    </aside>
     
   </main>
 
@@ -328,7 +354,7 @@ https://github.com/alex-shpak/hugo-book
     
     
     if (window.location.pathname !== '/') {
-      window.location.replace('https:\/\/scratch3-tello.app\/docs\/')
+      window.location.replace('https:\/\/scratch3-tello.app\/docs\/development\/i18n\/')
       return
     }
 

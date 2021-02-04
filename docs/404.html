@@ -10,11 +10,11 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://scratch3-tello.app/404.html" />
 
-<title>404 Page not found | Scratch3 Tello Extension</title>
+<title>404 Page not found | Scratch3-Tello</title>
 <link rel="manifest" href="https://scratch3-tello.app/manifest.json">
 <link rel="icon" href="https://scratch3-tello.app/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="https://scratch3-tello.app/book.min.6c7c6446dfdee7c8c933e9bbc6e80ee3ed6c913b2a59519f2092c3c6a9d63e55.css" integrity="sha256-bHxkRt/e58jJM&#43;m7xugO4&#43;1skTsqWVGfIJLDxqnWPlU=">
-<script defer src="https://scratch3-tello.app/en.search.min.698f8ee1eedfcff4b3ba956b006e993a2952366e961508cc8d970d0e77904eed.js" integrity="sha256-aY&#43;O4e7fz/SzupVrAG6ZOilSNm6WFQjMjZcNDneQTu0="></script>
+<script defer src="https://scratch3-tello.app/en.search.min.3ba1af7d473b4f97fc22dd737c37c308d4b98988de4fa34c6129244ef5ca1dee.js" integrity="sha256-O6GvfUc7T5f8It1zfDfDCNS5iYjeT6NMYSkkTvXKHe4="></script>
 
 <script type="application/javascript">
 var doNotTrack = false;
@@ -31,7 +31,7 @@ Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 
     <style>
       .not-found {
@@ -51,12 +51,60 @@ https://github.com/alex-shpak/hugo-book
         <h1>404</h1>
         <h2>Page Not Found</h2>
         <h3>
-          <a href="https://scratch3-tello.app/">Scratch3 Tello Extension</a>
+          <a href="https://scratch3-tello.app/">Scratch3-Tello</a>
         </h3>
       </div>
     </main>
 
+    <script>
+  (function () {
+    if (typeof Cookies.get('first') !== 'undefined') {
+      return
+    }
+    Cookies.set('first', false)
+
     
+    
+    if (window.location.pathname !== '/') {
+      window.location.replace('https:\/\/scratch3-tello.app\/404.html')
+      return
+    }
+
+    const getFirstBrowserLanguage = function () {
+      var nav = window.navigator,
+      browserLanguagePropertyKeys = ['language', 'browserLanguage', 'systemLanguage', 'userLanguage'],
+      i,
+      language;
+
+      if (Array.isArray(nav.languages)) {
+          for (i = 0; i < nav.languages.length; i++) {
+            language = nav.languages[i];
+            if (language && language.length) {
+                return language;
+            }
+          }
+      }
+
+      
+      for (i = 0; i < browserLanguagePropertyKeys.length; i++) {
+          language = nav[browserLanguagePropertyKeys[i]];
+          if (language && language.length) {
+            return language;
+          }
+      }
+      return 'en';
+    }
+
+    const preferLang = getFirstBrowserLanguage()
+    if (preferLang.indexOf('ja') !== -1) {
+      
+      window.location.replace('/ja/');
+    } else {
+      
+      window.location.replace('/en/');
+    }
+  })();
+</script>
     
 <script type="application/javascript">
 var doNotTrack = false;

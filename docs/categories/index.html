@@ -11,13 +11,13 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://scratch3-tello.app/categories/" />
 
-<title>Categories | Scratch3 Tello Extension</title>
+<title>Categories | Scratch3-Tello</title>
 <link rel="manifest" href="https://scratch3-tello.app/manifest.json">
 <link rel="icon" href="https://scratch3-tello.app/favicon.png" type="image/x-icon">
 <link rel="alternate" hreflang="ja" href="https://scratch3-tello.app/ja/categories/" title="Categories">
 
 <link rel="stylesheet" href="https://scratch3-tello.app/book.min.6c7c6446dfdee7c8c933e9bbc6e80ee3ed6c913b2a59519f2092c3c6a9d63e55.css" integrity="sha256-bHxkRt/e58jJM&#43;m7xugO4&#43;1skTsqWVGfIJLDxqnWPlU=">
-<script defer src="https://scratch3-tello.app/en.search.min.698f8ee1eedfcff4b3ba956b006e993a2952366e961508cc8d970d0e77904eed.js" integrity="sha256-aY&#43;O4e7fz/SzupVrAG6ZOilSNm6WFQjMjZcNDneQTu0="></script>
+<script defer src="https://scratch3-tello.app/en.search.min.3ba1af7d473b4f97fc22dd737c37c308d4b98988de4fa34c6129244ef5ca1dee.js" integrity="sha256-O6GvfUc7T5f8It1zfDfDCNS5iYjeT6NMYSkkTvXKHe4="></script>
 
 <script type="application/javascript">
 var doNotTrack = false;
@@ -29,13 +29,13 @@ if (!doNotTrack) {
 }
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
-<link rel="alternate" type="application/rss+xml" href="https://scratch3-tello.app/categories/index.xml" title="Scratch3 Tello Extension" />
+<link rel="alternate" type="application/rss+xml" href="https://scratch3-tello.app/categories/index.xml" title="Scratch3-Tello" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
 
-  
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 </head>
 
 <body dir=>
@@ -47,7 +47,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a href="https://scratch3-tello.app/"><span>Scratch3 Tello Extension</span>
+  <a href="https://scratch3-tello.app/"><span>Scratch3-Tello</span>
   </a>
 </h2>
 
@@ -76,19 +76,27 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     
       
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Getting started</span>
+  
+
+          
+  <ul>
+    
+      
         <li>
           
   
   
 
   
-    <a href="https://scratch3-tello.app/docs/getting-started/" class="">Getting Started</a>
+    <a href="https://scratch3-tello.app/docs/getting-started/windows/" class="">For Windows</a>
   
-
-          
-  <ul>
-    
-  </ul>
 
         </li>
       
@@ -100,13 +108,8 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://scratch3-tello.app/docs/development/" class="">Development</a>
+    <a href="https://scratch3-tello.app/docs/getting-started/macos/" class="">For macOS</a>
   
-
-          
-  <ul>
-    
-  </ul>
 
         </li>
       
@@ -118,11 +121,55 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://scratch3-tello.app/docs/internationalization/" class="">Internationalization</a>
+    <a href="https://scratch3-tello.app/docs/getting-started/linux/" class="">For Linux</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Development</span>
   
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://scratch3-tello.app/docs/development/build-env/" class="">Build Environment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://scratch3-tello.app/docs/development/i18n/" class="">Internationalization</a>
+  
+
+        </li>
+      
     
   </ul>
 
@@ -315,7 +362,55 @@ https://github.com/alex-shpak/hugo-book
     
   </main>
 
-  
+  <script>
+  (function () {
+    if (typeof Cookies.get('first') !== 'undefined') {
+      return
+    }
+    Cookies.set('first', false)
+
+    
+    
+    if (window.location.pathname !== '/') {
+      window.location.replace('https:\/\/scratch3-tello.app\/categories\/')
+      return
+    }
+
+    const getFirstBrowserLanguage = function () {
+      var nav = window.navigator,
+      browserLanguagePropertyKeys = ['language', 'browserLanguage', 'systemLanguage', 'userLanguage'],
+      i,
+      language;
+
+      if (Array.isArray(nav.languages)) {
+          for (i = 0; i < nav.languages.length; i++) {
+            language = nav.languages[i];
+            if (language && language.length) {
+                return language;
+            }
+          }
+      }
+
+      
+      for (i = 0; i < browserLanguagePropertyKeys.length; i++) {
+          language = nav[browserLanguagePropertyKeys[i]];
+          if (language && language.length) {
+            return language;
+          }
+      }
+      return 'en';
+    }
+
+    const preferLang = getFirstBrowserLanguage()
+    if (preferLang.indexOf('ja') !== -1) {
+      
+      window.location.replace('/ja/');
+    } else {
+      
+      window.location.replace('/en/');
+    }
+  })();
+</script>
 </body>
 
 </html>

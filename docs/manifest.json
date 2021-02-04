@@ -1,6 +1,6 @@
 {
-  "name": "Scratch3 Tello Extension",
-  "short_name": "Scratch3 Tello Extension",
+  "name": "Scratch3-Tello",
+  "short_name": "Scratch3-Tello",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

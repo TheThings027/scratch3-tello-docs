@@ -3,6 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://scratch3-tello.app/ja/docs/getting-started/windows/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scratch3-tello.app/docs/getting-started/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://scratch3-tello.app/ja/docs/getting-started/windows/"
+                />
+  </url>
+  
+  <url>
     <loc>https://scratch3-tello.app/ja/docs/getting-started/</loc>
     <xhtml:link
                 rel="alternate"
@@ -13,6 +27,48 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://scratch3-tello.app/ja/docs/getting-started/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scratch3-tello.app/ja/docs/development/build-env/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scratch3-tello.app/docs/development/build-env/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://scratch3-tello.app/ja/docs/development/build-env/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scratch3-tello.app/ja/docs/getting-started/macos/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scratch3-tello.app/docs/getting-started/macos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://scratch3-tello.app/ja/docs/getting-started/macos/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scratch3-tello.app/ja/docs/development/i18n/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scratch3-tello.app/docs/development/i18n/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://scratch3-tello.app/ja/docs/development/i18n/"
                 />
   </url>
   
@@ -31,16 +87,16 @@
   </url>
   
   <url>
-    <loc>https://scratch3-tello.app/ja/docs/internationalization/</loc>
+    <loc>https://scratch3-tello.app/ja/docs/getting-started/linux/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scratch3-tello.app/docs/internationalization/"
+                href="https://scratch3-tello.app/docs/getting-started/linux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://scratch3-tello.app/ja/docs/internationalization/"
+                href="https://scratch3-tello.app/ja/docs/getting-started/linux/"
                 />
   </url>
   
