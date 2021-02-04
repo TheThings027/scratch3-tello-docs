@@ -1,34 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Development on Scratch3-Tello</title>
-    <link>https://scratch3-tello.app/docs/development/</link>
-    <description>Recent content in Development on Scratch3-Tello</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://scratch3-tello.app/docs/development/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Build Environment</title>
-      <link>https://scratch3-tello.app/docs/development/build-env/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://scratch3-tello.app/docs/development/build-env/</guid>
-      <description>Build Environment #  Scratch3-Tello does not work only with the extension mechanism provided in Scratch. In fact, I&amp;rsquo;ve made changes to scratch-vm, scratch-gui, and scratch-desktop that make up Scratch.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Development on Scratch3-Tello</title><link>https://scratch3-tello.app/docs/development/</link><description>Recent content in Development on Scratch3-Tello</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://scratch3-tello.app/docs/development/index.xml" rel="self" type="application/rss+xml"/><item><title>Build Environment</title><link>https://scratch3-tello.app/docs/development/build-env/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://scratch3-tello.app/docs/development/build-env/</guid><description>Build Environment # Scratch3-Tello does not work only with the extension mechanism provided in Scratch. In fact, I&amp;rsquo;ve made changes to scratch-vm, scratch-gui, and scratch-desktop that make up Scratch.
 The scratch3-tello repository contains the diffs of those changes made, file by file. Therefore, you cannot build just by cloning this repository.
-Create a working folder #  $ mkdir scratch3-tello $ cd scratch3-tello Download the script to build the environment #  $ wget https://raw.</description>
-    </item>
-    
-    <item>
-      <title>Internationalization</title>
-      <link>https://scratch3-tello.app/docs/development/i18n/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://scratch3-tello.app/docs/development/i18n/</guid>
-      <description>Internationalization #  Block names are defined in scratch-vm/src/extensions/scratch3_tello/index.js. The message object described in this file will be used by i18n.
-message[&#39;internal block code&#39;][&#39;language code&#39;] is the block name in that language for that block.
+Create a working folder # $ mkdir scratch3-tello $ cd scratch3-tello Download the script to build the environment # $ wget https://raw.</description></item><item><title>Internationalization</title><link>https://scratch3-tello.app/docs/development/i18n/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://scratch3-tello.app/docs/development/i18n/</guid><description>Internationalization # Block names are defined in scratch-vm/src/extensions/scratch3_tello/index.js. The message object described in this file will be used by i18n.
+message['internal block code']['language code'] is the block name in that language for that block.
 Pull-Requests are always welcome to add or update translation.
-Example #  Translate the takeoff block into German. At the moment, message[&#39;takeoff&#39;] looks like this
-const message = { takeoff: { &amp;#39;ja&amp;#39;: &amp;#39;離陸する&amp;#39;, &amp;#39;ja-Hira&amp;#39;: &amp;#39;りりくする&amp;#39;, &amp;#39;en&amp;#39;: &amp;#39;takeoff&amp;#39;, }, .</description>
-    </item>
-    
-  </channel>
-</rss>
+Example # Translate the takeoff block into German. At the moment, message['takeoff'] looks like this
+const message = { takeoff: { &amp;#39;ja&amp;#39;: &amp;#39;離陸する&amp;#39;, &amp;#39;ja-Hira&amp;#39;: &amp;#39;りりくする&amp;#39;, &amp;#39;en&amp;#39;: &amp;#39;takeoff&amp;#39;, }, .</description></item></channel></rss>
