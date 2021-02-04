@@ -1,6 +1,6 @@
 baseURL = "https://scratch3-tello.app/"
 languageCode = "en-us"
-title = "Scratch3 Tello Extension"
+title = "Scratch3-Tello"
 publishDir = "docs"
 canonifyurls = true
 theme = "book"
