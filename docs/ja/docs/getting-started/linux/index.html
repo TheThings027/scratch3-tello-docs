@@ -16,4 +16,4 @@ const getFirstBrowserLanguage=function(){var nav=window.navigator,browserLanguag
 for(i=0;i<browserLanguagePropertyKeys.length;i++){language=nav[browserLanguagePropertyKeys[i]];if(language&&language.length){return language;}}
 return 'en';}
 const preferLang=getFirstBrowserLanguage()
-if(preferLang.indexOf('ja')!==-1){window.location.replace('/ja/');}else{window.location.replace('/en/');}})();</script></body></html>
+if(preferLang.indexOf('ja')!==-1){window.location.replace('/ja/');}else{}})();</script></body></html>
