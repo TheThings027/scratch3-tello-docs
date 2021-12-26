@@ -13,4 +13,4 @@ Go to [Releases](https://github.com/kebhr/scratch3-tello/releases) on GitHub and
 Extract the downloaded zip file to a location of your choice.
 
 ## Start
-**After connecting to Tello**, launch `Scratch Desktop.exe`, which is contained in the extracted folder.
+**After connecting to Tello**, launch `Scratch Desktop.app`, which is contained in the extracted folder.
